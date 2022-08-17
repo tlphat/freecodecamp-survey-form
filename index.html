@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main>
+      <form id="survey-form" action="#">
+        <label id="name-label">
+          Name <input id="name" type="text" name="name" placeholder="Enter your name" required/>
+        </label>
+        <label id="email-label">
+          Email <input id="email" type="email" name="email" placeholder="Enter your email" required/>
+        </label>
+        <label id="number-label">
+          Age (optional) <input id="number" type="number" name="age" min="16" max="300" placeholder="Age" required/>
+        </label>
+
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label class="radio">
+          <input type="radio" name="recommend" value="definitely" checked> Definitely
+        </label>
+        <label class="radio">
+          <input type="radio" name="recommend" value="maybe"> Maybe
+        </label>
+        <label class="radio">
+          <input type="radio" name="recommend" value="not-sure"> Not sure
+        </label>
+
+        <p>What is your faviorite feature of freeCodeCamp?</p>
+        <select id="dropdown" required>
+          <option disabled selected value>Select an option</option>
+          <option value="student">Challenges</option>
+          <option value="job">Projects</option>
+          <option value="learner">Community</option>
+          <option value="not-to-say">Open Source</option>
+        </select>
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="frontend"> Front-end Projects
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="backend"> Back-end Projects
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="visualize"> Data Visualization
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="challenges"> Challenges
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="opensource"> Open Source Community
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="gitter"> Gitter help rooms
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="videos"> Videos
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="meetups"> City Meetups
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="wiki"> Wiki
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="forum"> Forum
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="improve" value="courses"> Additional Courses
+        </label>
+
+        <label>
+          Any comments or suggestions?
+          <textarea name="comment" cols="30" rows="10" placeholder="Enter your comment here..." spellcheck="false"></textarea>
+        </label>
+        <input id="submit" type="submit">
+      </form>
+    </main>
+  </body>
+</html>
